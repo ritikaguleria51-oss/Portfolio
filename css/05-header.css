@@ -84,8 +84,10 @@
 }
 
 .logo-box img {
-    height: 45px;
+    height: 48px;
     width: auto;
+    max-width: 220px;
+    object-fit: contain;
 }
 
 .main-header__bottom-right {

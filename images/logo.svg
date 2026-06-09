@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 45" fill="none">
-  <text x="0" y="34" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#1B1B1B">Dili<tspan fill="#FF5E14">gent</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" role="img" aria-label="Ritika Guleria">
+  <defs>
+    <linearGradient id="rgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5E14"/>
+      <stop offset="100%" stop-color="#FF8A4C"/>
+    </linearGradient>
+  </defs>
+  <!-- Monogram mark -->
+  <circle cx="24" cy="24" r="22" fill="url(#rgGrad)"/>
+  <text x="24" y="31" text-anchor="middle" font-family="'Inter Tight', Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">RG</text>
+  <!-- Name -->
+  <text x="56" y="22" font-family="'Inter Tight', Arial, sans-serif" font-size="20" font-weight="800" fill="#1B1B1B">Ritika</text>
+  <text x="56" y="40" font-family="'Inter Tight', Arial, sans-serif" font-size="15" font-weight="600" fill="#FF5E14" letter-spacing="1.5">GULERIA</text>
 </svg>
