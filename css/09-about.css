@@ -1,0 +1,243 @@
+/* ============================================
+   STEP 9: About Section Styles
+   ============================================ */
+.about-section {
+    padding: 100px 0;
+    background: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content .text p {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.about-fact-box {
+    margin-bottom: 30px;
+}
+
+.about-fact-box .row {
+    --bs-gutter-x: 20px;
+}
+
+.fact-single {
+    background: var(--bg-gray);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.fact-single:hover {
+    background: var(--primary);
+    transform: translateY(-5px);
+}
+
+.fact-single:hover h2,
+.fact-single:hover h3,
+.fact-single:hover p,
+.fact-single:hover .suffix {
+    color: #fff;
+}
+
+.fact-single .count-outer {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.fact-single h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--primary);
+    transition: var(--transition);
+    margin: 0;
+    line-height: 1;
+}
+
+.fact-single .suffix {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.fact-single h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.fact-single p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* About Images Gallery */
+.about-images {
+    position: relative;
+    padding: 10px 0 10px 30px;
+}
+
+.about-images-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-images-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.about-img-box {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: var(--bg-gray);
+}
+
+.about-img-box img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.about-img-box:hover img {
+    transform: scale(1.05);
+}
+
+.about-img-box--offset {
+    margin-top: 50px;
+}
+
+.about-img-box--wide img {
+    height: 280px;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    background: var(--primary);
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 3;
+    min-width: 140px;
+}
+
+.experience-badge h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+}
+
+.experience-badge p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0 0;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+}
+
+.about-title-box {
+    background: var(--secondary);
+    border-radius: var(--radius-lg);
+    padding: 35px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-title-box h3 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Simple about image (index-3 etc.) */
+.about-single-image .about-img-box img {
+    height: 420px;
+    border-radius: var(--radius-lg);
+}
+
+/* Brand Section */
+.brand-section {
+    padding: 60px 0;
+    background: var(--bg-gray);
+}
+
+.brand-item {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.5;
+    transition: var(--transition);
+    filter: grayscale(100%);
+}
+
+.brand-item:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.brand-item img {
+    max-height: 40px;
+    margin: 0 auto;
+}
+
+/* About section responsive */
+@media (max-width: 991px) {
+    .about-images {
+        padding: 40px 0 0;
+        margin-top: 20px;
+    }
+
+    .about-img-box--offset {
+        margin-top: 0;
+    }
+
+    .experience-badge {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .about-title-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 575px) {
+    .about-images-top {
+        grid-template-columns: 1fr;
+    }
+
+    .fact-single h2 {
+        font-size: 36px;
+    }
+
+    .about-img-box img,
+    .about-img-box--wide img {
+        height: 220px;
+    }
+}

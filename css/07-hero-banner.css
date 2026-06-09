@@ -1,0 +1,206 @@
+/* ============================================
+   STEP 7: Hero / Banner Section Styles
+   ============================================ */
+.banner-section {
+    padding: 80px 0 100px;
+    background: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-section .banner-shape {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.banner-shape.shape-1 { top: 10%; left: 5%; width: 80px; animation: floatBob 4s ease-in-out infinite; }
+.banner-shape.shape-2 { top: 20%; right: 10%; width: 60px; animation: floatBob 5s ease-in-out infinite reverse; }
+.banner-shape.shape-3 { bottom: 15%; left: 15%; width: 50px; animation: floatBob 3.5s ease-in-out infinite; }
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content .sub-title h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.banner-content h1 {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+
+.banner-content .text p {
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+.banner-content .btn-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.video-gallery {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.video-gallery .play-btn {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    animation: pulse 2s infinite;
+}
+
+.video-gallery .play-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    animation: ripple 2s infinite;
+}
+
+.video-gallery .text2 p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.banner-images {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-images ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.banner-images li {
+    flex: 1;
+    max-width: 280px;
+}
+
+.banner-img-single {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.banner-img-single img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.banner-img-single:hover img {
+    transform: scale(1.05);
+}
+
+.banner-img-single.offset {
+    margin-top: 50px;
+}
+
+/* Home Two - Dark Hero */
+.banner-dark {
+    background: var(--secondary);
+    padding: 120px 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 94, 20, 0.08) 100%);
+}
+
+.banner-dark h1 {
+    color: #fff;
+    font-size: 62px;
+}
+
+.banner-dark .text p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.banner-dark .sub-title h4 {
+    color: var(--primary);
+}
+
+/* Home Three - Centered Hero */
+.banner-centered {
+    text-align: center;
+    padding: 140px 0 100px;
+    background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-gray) 100%);
+}
+
+.banner-centered h1 {
+    font-size: 72px;
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.banner-centered .text p {
+    max-width: 600px;
+    margin: 0 auto 35px;
+}
+
+.banner-centered .btn-box {
+    justify-content: center;
+}
+
+.banner-centered .banner-images {
+    margin-top: 60px;
+}
+
+.banner-centered .banner-img-single img {
+    height: 350px;
+}
+
+@keyframes floatBob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes ripple {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}

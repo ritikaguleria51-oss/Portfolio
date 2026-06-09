@@ -1,0 +1,79 @@
+/* ============================================
+   STEP 13: Testimonials Section
+   ============================================ */
+.testimonials-section {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+
+.testimonial-card {
+    background: var(--bg-gray);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.testimonial-card .quote-icon {
+    font-size: 40px;
+    color: var(--primary);
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .text p {
+    font-size: 17px;
+    font-style: italic;
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-card .author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-card .author h4 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.testimonial-card .author span {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.testimonial-card .rating {
+    margin-bottom: 15px;
+}
+
+.testimonial-card .rating i {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+.testimonial-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--border);
+    opacity: 1;
+}
+
+.testimonial-slider .swiper-pagination-bullet-active {
+    background: var(--primary);
+    width: 30px;
+    border-radius: 10px;
+}

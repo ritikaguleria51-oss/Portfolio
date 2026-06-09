@@ -1,0 +1,46 @@
+/* ============================================
+   STEP 4: Custom Cursor Effect
+   ============================================ */
+.custom-cursor__cursor,
+.custom-cursor__cursor-two {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99990;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-cursor__cursor {
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+}
+
+.custom-cursor__cursor-two {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary);
+    background: transparent;
+    opacity: 0.5;
+}
+
+.custom-cursor__cursor.hover {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.custom-cursor__cursor-two.hover {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 94, 20, 0.1);
+    border-color: var(--primary);
+}
+
+@media (max-width: 991px) {
+    .custom-cursor__cursor,
+    .custom-cursor__cursor-two {
+        display: none;
+    }
+}

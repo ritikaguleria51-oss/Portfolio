@@ -1,0 +1,220 @@
+/* ============================================
+   STEP 2: Base Reset & Global Styles
+   ============================================ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    background-color: var(--bg-gray);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.body-gray-bg {
+    background-color: var(--bg-gray);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding-sm {
+    padding: 70px 0;
+}
+
+/* Section Title */
+.sec-title {
+    margin-bottom: 50px;
+}
+
+.sec-title .sub-title h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.sec-title .sub-title h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.sec-title h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.sec-title.text-center .sub-title h4 {
+    padding-left: 0;
+}
+
+.sec-title.text-center .sub-title h4::before {
+    display: none;
+}
+
+/* Buttons */
+.thm-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    transition: var(--transition);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.thm-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary);
+    transition: var(--transition);
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.thm-btn:hover {
+    color: #fff;
+    border-color: var(--secondary);
+}
+
+.thm-btn:hover::before {
+    left: 0;
+}
+
+.thm-btn-outline {
+    background: transparent;
+    color: var(--text-dark);
+    border-color: var(--border);
+}
+
+.thm-btn-outline:hover {
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.thm-btn-outline::before {
+    background: var(--primary);
+}
+
+.thm-btn i {
+    font-size: 12px;
+    transition: var(--transition);
+}
+
+.thm-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* Page Wrapper */
+.page-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scroll to top */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+    border: none;
+}
+
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}

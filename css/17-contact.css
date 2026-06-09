@@ -1,0 +1,119 @@
+/* ============================================
+   STEP 17: Contact Section Styles
+   ============================================ */
+.contact-section {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+
+.contact-info-card {
+    background: var(--bg-gray);
+    border-radius: var(--radius-lg);
+    padding: 35px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-info-card:hover {
+    background: var(--primary);
+    transform: translateY(-5px);
+}
+
+.contact-info-card:hover .icon,
+.contact-info-card:hover h3,
+.contact-info-card:hover p,
+.contact-info-card:hover a {
+    color: #fff;
+}
+
+.contact-info-card .icon {
+    width: 70px;
+    height: 70px;
+    background: var(--bg-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--primary);
+    margin: 0 auto 20px;
+    transition: var(--transition);
+}
+
+.contact-info-card:hover .icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-info-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info-card p,
+.contact-info-card a {
+    font-size: 15px;
+    color: var(--text);
+}
+
+.contact-form-box {
+    background: var(--bg-gray);
+    border-radius: var(--radius-lg);
+    padding: 45px;
+}
+
+.contact-form-box h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-family: var(--font-primary);
+    color: var(--text-dark);
+    background: var(--bg-white);
+    outline: none;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 94, 20, 0.1);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-map {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

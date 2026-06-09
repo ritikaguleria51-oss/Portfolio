@@ -1,0 +1,89 @@
+/* ============================================
+   STEP 16: Pricing Section Styles
+   ============================================ */
+.pricing-section {
+    padding: 100px 0;
+    background: var(--bg-gray);
+}
+
+.pricing-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 45px 35px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.pricing-card:hover,
+.pricing-card.featured {
+    border-color: var(--primary);
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.featured .badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pricing-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    margin: 25px 0;
+}
+
+.pricing-card .price h2 {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--primary);
+    display: inline;
+}
+
+.pricing-card .price span {
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+.pricing-card .features li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 15px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pricing-card .features li i {
+    color: var(--primary);
+}
+
+.pricing-card .features li.disabled {
+    color: var(--text-light);
+    text-decoration: line-through;
+}
+
+.pricing-card .features li.disabled i {
+    color: var(--text-light);
+}
+
+.pricing-card .thm-btn {
+    margin-top: auto;
+    width: 100%;
+    justify-content: center;
+}

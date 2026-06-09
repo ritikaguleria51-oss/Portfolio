@@ -1,0 +1,139 @@
+/* ============================================
+   STEP 8: Services Section Styles
+   ============================================ */
+.services-section {
+    padding: 100px 0;
+    background: var(--bg-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 40px 35px;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.service-card .icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 94, 20, 0.1);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 25px;
+    transition: var(--transition);
+}
+
+.service-card:hover .icon {
+    background: var(--primary);
+    color: #fff;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 a {
+    color: var(--text-dark);
+}
+
+.service-card h3 a:hover {
+    color: var(--primary);
+}
+
+.service-card p {
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.service-card .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.service-card .read-more i {
+    transition: var(--transition);
+}
+
+.service-card:hover .read-more i {
+    transform: translateX(5px);
+}
+
+/* Service Detail Page */
+.service-detail-content {
+    padding: 80px 0;
+}
+
+.service-detail-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-detail-content .feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.service-detail-content .feature-list i {
+    color: var(--primary);
+    margin-top: 4px;
+}
+
+.service-sidebar {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 35px;
+    box-shadow: var(--shadow-sm);
+}
+
+.service-sidebar h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border);
+}
+
+.service-sidebar .sidebar-links li {
+    margin-bottom: 5px;
+}
+
+.service-sidebar .sidebar-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.service-sidebar .sidebar-links a:hover,
+.service-sidebar .sidebar-links a.active {
+    background: var(--primary);
+    color: #fff;
+}

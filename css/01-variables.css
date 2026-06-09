@@ -1,0 +1,28 @@
+/* ============================================
+   STEP 1: CSS Variables & Theme Colors
+   ============================================ */
+:root {
+    --primary: #FF5E14;
+    --primary-dark: #e04d0a;
+    --primary-light: #ff7a3d;
+    --secondary: #1B1B1B;
+    --secondary-light: #2d2d2d;
+    --text: #666666;
+    --text-dark: #1B1B1B;
+    --text-light: #999999;
+    --bg-white: #ffffff;
+    --bg-gray: #F6F6F6;
+    --bg-dark: #1B1B1B;
+    --border: #e8e8e8;
+    --border-light: #f0f0f0;
+    --font-primary: 'Inter Tight', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --header-height: 90px;
+}
