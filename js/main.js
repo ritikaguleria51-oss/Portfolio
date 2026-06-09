@@ -136,3 +136,47 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+// 3rd party email attach 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // EmailJS Initialize
+    emailjs.init({
+        publicKey: "A-o705r6yrJIbcZhL"
+    });
+
+    // Form Submit
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_3qri82i",
+            "template_m0jx3eh",
+            this
+        )
+        .then(function () {
+            alert("Message Sent Successfully!");
+            document.getElementById("contact-form").reset();
+        })
+        .catch(function (error) {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send message!");
+        });
+
+    });
+
+});
